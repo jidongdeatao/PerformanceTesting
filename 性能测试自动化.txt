@@ -1,0 +1,3 @@
+性能测试自动化：
+利用的工具：
+  Jenkins + Ant + JMeter
