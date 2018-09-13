@@ -1,3 +1,8 @@
 性能测试自动化：
 利用的工具：
   Jenkins + Ant + JMeter
+
+性能测试自动化逻辑图：
+Jenkins -> Agent -> Ant -> Jmeter(Master) -> Jmeter(Slave) -> APP Server
+                                         |-> Jmeter(Slave) -> APP Server
+                                         |-> Jmeter(Slave) -> APP Server
