@@ -6,3 +6,7 @@
 Jenkins -> Agent -> Ant -> Jmeter(Master) -> Jmeter(Slave) -> APP Server
                                          |-> Jmeter(Slave) -> APP Server
                                          |-> Jmeter(Slave) -> APP Server
+执行步骤：
+（1）使用Ant来定义测试活动，具体是使用配置文件来完成的
+（2）Jenkins作为任务调度器通过Agent（借助slave.jar)来调用Ant构建测试
+（3）设置报告模版，利用Ant来解析测试结果。测试执行完成后，由Jenkins调用Ant生成报告。
